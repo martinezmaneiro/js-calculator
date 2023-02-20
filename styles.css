@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5ebe0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+    'dis dis dis dis'
+    'AC AC div times'
+    'seven eight nine minus'
+    'four five six plus'
+    'one two three equal'
+    'zero zero dot equal'
+    ;
+    background-color: #2b2d42;
+    border: 3px solid black;
+    border-radius: 2%;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 40px;
+    margin: 5px;
+    background-color: grey;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5%;
+    box-shadow: inset 2px 2px 2px 0 black;
+    font-family: 'Gruppo', cursive;
+}
+
+.button:hover {
+    background-color: #507393;
+}
+
+
+#display{
+    height: 90px;
+    padding: 5px;
+    margin: 10px;
+    grid-area: dis;
+    background-color: #003566;
+    text-align: right;
+    font-size: 20px;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+#display input {
+    width: 100%;
+    text-align: right;
+    background-color: #003566;
+    border: none;
+    font-family: 'Gemunu Libre', sans-serif;
+}
+
+input::placeholder{
+    margin-right: 20px;
+    color: yellow;
+}
+input:disabled{
+    color: yellow;
+}
+.total {
+    padding: 20px;
+    color: yellow;
+}
+
+#clear {
+    grid-area: AC;
+    background-color: #bb3e03;
+}
+#clear:hover{
+    background-color: #a02828;
+}
+#equals{
+    grid-area: equal;
+    background-color: #145b91;
+}
+#equals:hover{
+    background-color: #0893fd;
+}   
+#zero{
+    grid-area: zero;
+}
