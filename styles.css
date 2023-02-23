@@ -91,10 +91,11 @@ input:disabled{
 #equals{
     grid-area: equal;
     background-color: #145b91;
+    font-family: 'Courier New', Courier, monospace;
 }
 #equals:hover{
     background-color: #0893fd;
-}   
+}
 #zero{
     grid-area: zero;
 }
