@@ -5,12 +5,14 @@
     background-color: #f5ebe0;
 }
 .container {
-    padding-top: 100px;
-    display: flex;
+    margin-top: 10vh;
+    position: relative;
+    display: grid;
     justify-content: center;
     align-items: center;
 }
 .grid{
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
