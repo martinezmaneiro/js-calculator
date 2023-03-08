@@ -2,14 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: #f5ebe0;
 }
 .container {
     padding-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f5ebe0;
 }
 .grid{
     display: grid;
@@ -68,7 +67,6 @@
     border: none;
     font-family: 'Gemunu Libre', sans-serif;
 }
-
 input::placeholder{
     margin-right: 20px;
     color: yellow;
@@ -79,6 +77,8 @@ input:disabled{
 .total {
     padding: 20px;
     color: yellow;
+    background-color: #003566;
+
 }
 
 #clear {
